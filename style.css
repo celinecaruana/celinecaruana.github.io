@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background:#c3dce8;
+    font-weight: 300;
+    font-family: 'Domine', serif;
+}
+
+@font-face {
+    font-family: GlacialIndifference-Regular;
+    src: url("fonts/GlacialIndifference-Regular.otf") format("opentype");
+}
+
+/* font-family: 'Abril Fatface', cursive; */
+/* font-family: 'Domine', serif; */
+
+nav {
+    font-family: GlacialIndifference-Regular;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background:white;
+}
+
+.logo {
+    position: absolute;
+    top:0;
+    left:0;
+    width:260px;
+    height: auto;
+}
+
+.celestial {
+    position: absolute;
+    top:-290px;
+    left:-70px;
+    width:1100px;
+    height: auto;
+}
+
+nav{
+    position: absolute;
+    top:55px;
+    left:700px;
+    width:auto;
+    width:500px
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+   display: inline-block;
+   margin-left: 70px;
+   padding-top: 23px
+}
+
+.hoverEffect {
+    position:relative;
+}
+
+.hoverEffectUl {
+    display:none;
+    position: absolute;
+    top:30px;
+    left:0;
+    background-color: white;
+
+}
+
+.hoverEffect:hover .hoverEffectUl {
+    display:block;
+}
+
+.line {
+    background-color: rgb(19,39,48);
+    position: absolute;
+    top: 36px;
+    left: 700px;
+    width: 2px;
+    height: 100px;
+}
