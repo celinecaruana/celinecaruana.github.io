@@ -43,6 +43,17 @@ h1 {
 	border-bottom: 1px solid #343f4b;
 	font-weight: 300;
 	font-size: 80px;
+	margin-top: 0px;
+	display: block;
+}
+
+h2 {
+	font-family: 'Abril Fatface', cursive;
+	color: #343f4b;
+	border-bottom: 1px solid #343f4b;
+	font-weight: 300;
+	font-size: 35px;
+	border: none;
 }
 
 p {
@@ -102,8 +113,6 @@ nav li {
     padding: 23px 0px;
 }
 
-
-
 .hoverEffect {
     position: relative;
 }
@@ -114,16 +123,18 @@ nav li {
     top: 60px;
     left: 0px;
     background-color: white;
+	z-index: 1;
 }
 
 .hoverEffectUl a {
 	padding: 5px 80px 5px 10px;
     border-bottom: 1px solid #e1e2e3;
+    margin: 0px 15px 10px;
 }
 
 .hoverEffectUl li {
-    margin: 0px 15px 10px;
-    padding: 0;
+	margin: 0px;
+    padding: 0px;
 }
 
 .hoverEffect:hover .hoverEffectUl {
@@ -157,6 +168,22 @@ nav li {
 	left: 0px;
 }
 
+.bodyBackgroundMe {
+	z-index:0;
+	position:absolute;
+	width: 441px;
+    top: 155px;
+	left: 740px;
+}
+
+.bodyBackgroundContact {
+	z-index:0;
+	position:absolute;
+	top: 26px;
+	left: 740px;
+	height: 636px;
+}
+
 .bodyInner {
 	z-index: 1;
 	position: absolute;
@@ -170,6 +197,48 @@ nav li {
 	background-color: rgba(255,255,255,0.7);
 	margin: 12px 0px;
 	min-height: 671px;
+}
+
+.bodyInnerContact {
+	z-index: 1;
+	position: absolute;
+	width:546px;
+	left: 0px;
+	margin: 25px;
+	padding: 50px;
+	text-align:center;
+	background-color: rgba(255,255,255,0.7);
+}
+
+.bodyInnerAbout {
+	z-index: 1;
+	position: absolute;
+	width:546px;
+	left: 0px;
+	margin: 25px;
+	padding: 50px;
+	text-align:center;
+}
+
+.bodyInnerAbout p {
+	border-bottom: 1px solid #343f4b;
+	padding:0px 0px 60px 0px;
+}
+
+.bodyInnerAbout h1 {
+	margin-top:0;
+}
+
+.bodyInnerAbout h2 {
+    margin-top: 88px;
+}
+
+.butterfly {
+	position:absolute;
+	top:150px;
+	left: 275px;
+	width:95px;
+	background-color: #c3dce8;
 }
 
 .circle {
@@ -266,16 +335,39 @@ nav li {
     left: 586px;
 }
 
-#shopButton {
+.inputText, .inputTextarea {
+	padding:20px;
+	font-family: 'Domine', serif;
+	background-color: #c3dce8;
+	color: #343f4b;
+	display: inline-block;
+	transition: all 0.3s;
+	width: 79%;
+	border: 2px solid #c3dce8;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: none;
+	margin-bottom: 7px;
+}
+
+.inputTextarea {
+	height: 180px;
+	width: 100%;
+}
+
+#shopButton, #submit {
 	padding:20px;
     font-family: 'Domine', serif;
 	background-color: #343E4A;
 	color: #fff;
 	display: inline-block;
 	transition: all 0.3s;
+	border:none;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
-#shopButton:hover {
+#shopButton:hover, #submit:hover {
 	padding:20px 30px;
 }
 
@@ -340,4 +432,34 @@ nav li {
 
 .btnRight img {
 	right:10px;
+}
+
+label {
+	font-size: 22px;
+    color: #343f4b;
+    width: 20%;
+    display: inline-block;
+    text-align: left;
+}
+
+form {
+	margin-bottom:0px;
+}
+
+.searchImg, .shoppingBagImg {
+	position:absolute;
+	background-color: rgba(255,255,255,0.7);
+	padding:4px;
+	width: 30px;
+	cursor:pointer;
+}
+
+.shoppingBagImg {
+	top: 90px;
+	right: 30px;
+}
+
+.searchImg {
+	top: 130px;
+	right: 30px;
 }
